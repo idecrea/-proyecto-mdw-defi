@@ -1,0 +1,61 @@
+// Header
+
+.header
+  background-size: cover
+  position: fixed
+  top: 0
+  width: 100%
+  margin: 0
+  padding: 0
+  z-index: 1
+  &__nav
+    display: flex
+    height: 4rem
+    background-color: $color-black
+    align-items: center
+  &__logo
+    flex-grow: 1
+    margin-left: 1rem
+  &__logo-img
+    width: 8rem
+  &__logo-telegram
+    width: 2rem
+  &__nav-button
+    display: flex
+    margin-left: 1rem
+  &__nav-menu
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $color-black
+    top: 4rem
+  &__nav-list
+    list-style: none
+    padding: 0
+  &__nav-link
+    display: block
+    text-align: center
+    border: 3px solid
+    border-bottom: none
+    padding: .8rem
+    &--pink
+      border-color: $color-pink
+    &--pink-light
+      border-color: $color-pink2
+    &--orange
+      border-color: $color-orange
+    &--yellow
+      border-bottom: 3px solid
+      border-color: $color-orange2
+  &__nav-button-area
+    display: flex
+    justify-content: center
+    margin: 3rem 0rem
+  &__nav-login
+    width: 194px
+  &__nav-register
+    width: 194px
+
+
+

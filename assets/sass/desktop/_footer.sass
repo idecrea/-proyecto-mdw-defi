@@ -1,0 +1,33 @@
+
+.footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-image: $color-lineargradient-footer
+  padding-top: 1.5rem
+  padding-bottom: 1rem
+  &__calltoaction
+    text-shadow: 2px 3px 4px $color-grey-shadow
+  &__nav-ul
+    list-style: none
+    display: flex
+    grid-gap: 1.5rem
+    padding: 0
+    margin: 1.5rem 0rem 1.5rem 1rem
+    align-items: center
+  &-nav__icon
+    display: block
+    width: 2.5rem
+    filter: drop-shadow(3px 5px 4px $color-grey-shadow)
+    &-linkedin
+      width: 3.5rem
+  &__politicas
+    display: flex
+    justify-content: center
+    grid-gap: 1.5rem
+    text-shadow: 3px 5px 4px $color-grey-shadow
+    padding-bottom: 1rem
+  &__politicas-link
+    transition: .3s ease-in-out
+    &:hover
+      color: $color-black-background

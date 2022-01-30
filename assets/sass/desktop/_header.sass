@@ -1,0 +1,86 @@
+// Header Desktop
+
+.header
+  background-size: cover
+  background-color: $color-black
+  border-bottom: 1px solid $color-black-background
+  width: 100%
+  position: fixed
+  top: 0
+  margin: 0
+  padding: 0
+  z-index: 1
+  justify-content: center
+  &__nav
+    display: flex
+    align-items: center
+    max-width: 1000px
+    margin: 0 auto
+    height: 3rem
+  &__logo
+    flex-grow: 1
+    margin-left: 1rem
+  &__logo-img
+    width: 8rem
+  &__nav-list
+    list-style: none
+    display: flex
+    padding: 0
+  &__nav-link
+    display: block
+    padding: 1.4rem 1rem
+    transition: .3s ease-in-out
+    &:hover
+      color: $color-orange2
+
+
+.enlaces
+  border: none
+  background-color: transparent
+  outline: none
+  color: $color-white
+  &__nav-menu
+    position: fixed
+    left: 0
+    right: 0
+    background-color: $color-yellow
+    top: 3rem
+    margin: auto
+    border-bottom: 1px solid $color-black-background
+    border-top: 1px solid $color-black-background
+    height: 400px
+  &__container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    grid-gap: 1rem
+    max-width: 900px
+    margin: auto
+    margin-top: 1rem
+    margin-bottom: 2rem
+  &__nav-item
+    display: block
+    margin: auto
+    transition: .3s ease-in-out
+    &:hover
+      filter: grayscale(100%)
+    &-binance
+      background-color: $color-black
+      padding: .5rem
+    &-revolut
+      background-color: $color-white
+      padding: .5rem
+    &-coinbase
+      background-color: $color-white
+      padding: .5rem
+  &__nav-link
+    display: block
+    text-align: center
+    border-bottom: none
+    padding: 0
+    width: 200px
+    margin: 0
+
+    &:hover
+      filter: grayscale(0%)
+

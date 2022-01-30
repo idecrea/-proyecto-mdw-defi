@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Defi Desde Cero</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Valentin Romero">
+    <meta name="keywords" content="Defi, Bitcoin, Formacion, Blockchain, SmartContracts, Binance,Crypto, Defi desde Cero">
+    <meta name="description" content="Consultor independiente para el conocimiento del entorno de las finanzas descentralizadas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link href="dist/mobile.css" rel="stylesheet" media="all and (max-width: 735px)">
+    <link href="dist/desktop.css" rel="stylesheet" media="all and (min-width: 735px)">
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <!-- Alpine Core -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- owncarousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- owncaorusel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:10000
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header" >
+        <nav class="header__nav">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link"><img src="/assets/img/logo/svg_h.svg" alt="Logo Horizontal" class="header__logo-img">
+                </a>
+            </div>
+            <div class="header__telegram">
+                <a href="https://t.me/joinchat/fb9-0KupETo0ODU0" class="header__telegram-link"><img src="/assets/icons/telegram.svg" alt="telegram" class="header__logo-telegram show__mobile">
+                </a>
+            </div>
+            <div x-data="{ expanded: false }" >
+                <button @click="expanded = !expanded" class="hamburger hamburger--squeeze header__nav-button show__mobile" type="button" x-bind:class="expanded ? 'is-active' : ''" >
+                  <span class=" hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <div x-show="expanded" x-collapse class="header__nav-menu">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--pink"  @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">¿Qué es Defi?</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--pink-light" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">Formaciones</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--orange" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">Sobre Mi</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--yellow" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">Enlaces de Interés</a></li>
+                    </ul>
+                    <p class="header__nav-button-area">
+                        <a href="#" class="button header__nav-login show__mobile">Iniciar Sesión</a>
+                    </p>
+                    <p class="header__nav-button-area">
+                        <a href="#" class="button header__nav-register show__mobile">Registrate</a>
+                    </p>
+                </div>
+                <div class="header__nav-menu show__desktop">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#" class="header__nav-link" >¿Qué es Defi?</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Formaciones</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Sobre Mi</a></li>
+                        <li class="header__nav-item">
+                            <div x-data="{ expanded: false }" >
+                                <button @click="expanded = !expanded" class="header__nav-link enlaces" type="button" x-bind:class="expanded ? 'is-active' : ''" >Enlaces de Interés</button>
+                                <div x-show="expanded" x-collapse class="enlaces__nav-menu">
+                                    <div class="enlaces__container" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">
+                                        <div class="enlaces__nav-item enlaces__nav-item-binance">
+                                            <a href="https://accounts.binance.com/es/register?ref=H0CM5R7H" target="_blank" class="enlaces__nav-link">
+                                            <img src="assets/img/logo_links/Binance_logo.png"
+                                                 alt="Binance" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item enlaces__nav-item-coinbase">
+                                            <a href="https://www.coinbase.com/es/join/belda_v?src=ios-link" target="_blank" class="enlaces__nav-link">
+                                                <img src="assets/img/logo_links/coinbase.png"
+                                                     alt="Coinbase" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item enlaces__nav-item-revolut">
+                                            <a href="https://revolut.com/referral/albert9eh6!SEP1AGG" target="_blank" class="enlaces__nav-link">
+                                                <img src="assets/img/logo_links/Logo_Revolut.png"
+                                                     alt="Revolut" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item">
+                                            <a href="https://dappradar.com/" target="_blank" class="enlaces__nav-link enlaces__nav-item-dapp">
+                                                <img src="assets/img/logo_links/dappradar-logo.png"
+                                                     alt="Dappradar" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item">
+                                            <a href="https://es.tradingview.com/gopro/?share_your_love=Alguertor" target="_blank" class="enlaces__nav-link enlaces__nav-item-tradingv">
+                                                <img src="assets/img/logo_links/defilama.png"
+                                                     alt="Tradingview" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item">
+                                            <a href="https://defipulse.com/" target="_blank" class="enlaces__nav-link enlaces__nav-item-dp">
+                                                <img src="assets/img/logo_links/defipulse.png"
+                                                     alt="Defipulse" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item">
+                                            <a href="https://www.defistation.io/" target="_blank" class="enlaces__nav-link enlaces__nav-item-ds">
+                                                <img src="assets/img/logo_links/Defistation.png"
+                                                     alt="Defistation" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item">
+                                            <a href="https://metamask.io/" target="_blank" class="enlaces__nav-link enlaces__nav-item-metamask">
+                                                <img src="assets/img/logo_links/metamask.png"
+                                                     alt="Metamask" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                        <div class="enlaces__nav-item">
+                                            <a href="https://coinmarketcap.com/es/" target="_blank" class="enlaces__nav-link enlaces__nav-item-coinmarket">
+                                                <img src="assets/img/logo_links/coinmarketcap.png"
+                                                     alt="Coinmarketcap" class="enlaces__nav-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="hero ">
+            <div class="hero__logo-area">
+                <img src="/assets/img/logo/Logo_bb.png" alt="Logo Principal" class="hero__logo animate__animated animate__fadeIn animate__delay-1s ">
+            </div>
+            <p class="hero__text animate__animated animate__fadeIn animate__delay-2s">Aprende a invertir de forma <span class="highlight">profesional</span> con <span class="highlight">criptomonedas</span> desde cero y con <span class="highlight">acompañamiento</span></p>
+        </section>
+        <section class="formacion">
+            <h1 class="formacion__title">Bienvenido al Mundo DeFi</h1>
+            <div class="formacion__button-area ">
+                <div class="formacion__button-textarea">
+                    <p class="formacion__text show__desktop">Hablemos de Criptos</p>
+                    <p class="formacion__text show__desktop">Llamada de 30 minutos Gratis</p>
+                    <a href="#" class="button formacion__button">
+                        <p class="formacion__button-maintext show__mobile">Hablemos de Criptos</p>
+                        <p class="formacion__button-secondarytext show__mobile">Llamada de 30 minutos Gratis</p>
+                        <span class="show__desktop">Registrate</span>
+                    </a>
+                </div>
+                <p class="formacion__img-area show__desktop">
+                    <img src="assets/img/formacion.webp" alt="Formacion" class="formacion__image show__desktop">
+                </p>
+            </div>
+            <div class="formacion__button-area formacion__button-area-yellow">
+                <div class="formacion__button-textarea">
+                    <p class="formacion__text show__desktop">Formación Cripto</p>
+                    <p class="formacion__text show__desktop">Clases para Cripto Alumnos</p>
+                    <a href="#" class="button formacion__button">
+                        <p class="formacion__button-maintext show__mobile">Formación Cripto</p>
+                        <p class="formacion__button-secondarytext show__mobile">Clases para Cripto Alumnos</p>
+                        <span class="show__desktop">Registrate</span>
+                    </a>
+                </div>
+                <p class="formacion__img-area show__desktop">
+                    <img src="assets/img/formacion2.webp" alt="Formacion" class="formacion__image show__desktop">
+                </p>
+            </div>
+        </section>
+        <section class="intro">
+            <h1 class="intro__title">DeFi? Desde Cero</h1>
+            <p class="intro__content">¿Estás buscando cómo iniciarte con las criptomonedas o aumentar tu conocimiento y llevar tus inversiones en cripto a otro nivel ? Aquí encontrarás la formación para cualquiera que sea tu situación:
+            </p>
+            <ul class="intro__ul">
+                <li class="intro__content intro__ content-list">Que es Bitcoin y cómo funciona</li>
+                <li class="intro__content intro__content-list">Que es Ethereum + EVM</li>
+                <li class="intro__content intro__content-list">Que es la Tecnología Blockchain</li>
+                <li class="intro__content intro__content-list">Cómo y dónde comprar tus primeras criptomonedas</li>
+                <li class="intro__content intro__content-list">Medidas de seguridad para tu cartera de inversión.</li>
+                <li class="intro__content intro__content-list">Qué son las Finanzas Descentralizadas (DeFi).</li>
+                <li class="intro__content intro__content-list">Análisis de protocolos DeFi</li>
+                <li class="intro__content intro__content-list">NFTs</li>
+                <li class="intro__content intro__content-list">Desarrollo de estrategias de Yield Farming</li>
+                <li class="intro__content intro__content-list">Tokenomics</li>
+                <li class="intro__content intro__content-list">Análisis Técnico, Fundamental y On Chain</li>
+                <li class="intro__content intro__content-list">Tokenización de activos</li>
+                <li class="intro__content intro__content-list">Creación de proyectos en blockchain</li>
+            </ul>
+            <p class="intro__content">Con esta formación aprenderás el paso a paso, con un método seguro y sencillo .
+                Con mi acompañamiento, el aprendizaje será mas rápido y te convertiras en un inversor profesional de criptomonedas antes de lo que harías haciendo el camino tú solo.
+             </p>
+            <p class="intro__content highlight center">Mi propósito es que seas capaz de saber desenvolverte dentro del ecosistema de las criptomonedas y DeFi de forma segura junto a una comunidad de personas que ya lo están haciendo.</p>
+            <p class="intro__content upper center">Descarga de Responsabilidad</p>
+            <ul class="intro__ul">
+                <li class="intro__content intro__content-list"><em>No soy asesor financiero.</em></li>
+                <li class="intro__content intro__content-list"><em>No gestiono carteras.</em></li>
+                <li class="intro__content intro__content-list"><em>No vendo servicios financieros.</em></li>
+                <li class="intro__content intro__content-list"><em>No seré responsable de las decisiones que tomes.</em></li>
+            </ul>
+        </section>
+        <section class="aboutme">
+            <h1 class="aboutme__title">Sobre Mí</h1>
+            <h2 class="aboutme__subtitle highlight">Mi nombre es Alberto Fayos</h2>
+            <div class="aboutme__container">
+                <p class="aboutme__imgarea">
+                    <img src="assets/img/perfil1.jpg" alt="Foto Perfil" class="aboutme__profileimg">
+                </p>
+                <div class="aboutme__container-text">
+                    <p class="aboutme__content">Comencé mi formación en criptomonedas de forma autodidacta durante el año 2018 y en 2021 realicé un Master en Blockchain con Tutellus.com Desde mi perspectiva y experiencia, he podido observar cómo la industria ha revolucionado de manera disruptiva el sector de las inversiones, como las finanzas descentralizadas (DeFi), proyectos de tokenización de activos y empresas, NFT Gamming y todo lo que tenemos por delante por desarrollar.</p>
+                    <p class="aboutme__content">
+                        Actualmente, me he profesionalizado dentro del sector DeFi, analizando y diseñando estrategias sobre protocolos descentralizados basados en Smart Contracts que corren por distintas Blockchain y realizando consultorias sobre es tecnologia tanto a empresas como personas interesadas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonios">
+            <h1 class="testimonios__title">Testimonios</h1>
+            <div class="owl-carousel">
+                <div>
+                    <p class="testimonios__content">Gracias por tu paciencia y dedicación, mas que un consultor, he encontrado a un amigo. <br> <span class="right">J.M Saturno</span></p>
+                </div>
+                <div>
+                    <p class="testimonios__content testimonios__content--orange">Se nota que tu intención es enseñar y rápido, 2 sesiones y ya voy solo... gracias por tus lecciones, te has ganado a un amigo!<br> <span class="right">S. Abasca</span></p>
+                </div>
+                <div>
+                    <p class="testimonios__content testimonios__content--yellow">La verdad que yo ya tenía nociones de criptomonedas pero eso de entrar en protocolos y demás lo veía algo complicado, no me arrepiento de haberte consultado por que con un par de sesiones ha sido mas que suficiente.<br><span class="right">J. Bonin</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="cookie-container">
+        <p>
+            Esta web utiliza cookies. Para continuar acepta nuestra
+            <a href="politicacookies.html" class="cookie-link">política de cookies</a>.
+        </p>
+        <button class="cookie-btn">
+            Acepto
+        </button>
+    </div>
+
+    <!-- Cookie JS -->
+    <script src="assets/js/cookie.js"></script>
+
+    <footer class="footer">
+        <h2 class="footer__calltoaction">¿Hablamos?</h2>
+        <nav class="footer__nav">
+            <ul class="footer__nav-ul">
+                <li class="footer-nav__il">
+                    <a href="https://www.instagram.com/defidesdecero/" class="footer-nav__link">
+                        <img src="assets/icons/instagram.svg" alt="Instagram" class="footer-nav__icon">
+                    </a>
+                </li>
+                <li class="footer-nav__il">
+                    <a href="https://twitter.com/DefiDesdeCero" class="footer-nav__link">
+                        <img src="assets/icons/twitter.svg" alt="Twitter" class="footer-nav__icon">
+                    </a>
+                </li>
+                <li class="footer-nav__il">
+                    <a href="https://www.facebook.com/alberto.fayosbelda" class="footer-nav__link">
+                        <img src="assets/icons/facebook.svg" alt="Facebook" class="footer-nav__icon">
+                    </a>
+                </li>
+                <li class="footer-nav__il">
+                    <a href="https://www.linkedin.com/in/alberto-fayos-a1aa9a49/" class="footer-nav__link">
+                        <img src="assets/icons/linkedin.svg" alt="Linkedin" class="footer-nav__icon footer-nav__icon-linkedin">
+                    </a>
+                </li>
+                <li class="footer-nav__il show__desktop">
+                    <a href="https://t.me/joinchat/fb9-0KupETo0ODU0" class="footer-nav__link">
+                        <img src="assets/icons/telegram.svg" alt="Telegram" class="footer-nav__icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__politicas">
+            <a href="avisolegal.html" class="footer__politicas-link footer__text">Acuerdos Legales y Politica de Privacidad</a>
+        </div>
+        <p class="footer__text">
+            &copy; 2021 Defi Desde Cero
+        </p>
+    </footer>
+</body>
+</html>

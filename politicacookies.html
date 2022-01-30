@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Politica Cookies</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Valentin Romero">
+    <meta name="keywords" content="Defi, Bitcoin, Formacion, Blockchain, SmartContracts, Binance,Crypto, Defi desde Cero">
+    <meta name="description" content="Consultor independiente para el conocimiento del entorno de las finanzas descentralizadas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link href="dist/mobile.css" rel="stylesheet" media="all and (max-width: 735px)">
+    <link href="dist/desktop.css" rel="stylesheet" media="all and (min-width: 735px)">
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <!-- Alpine Core -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+<header class="header" >
+    <nav class="header__nav">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link"><img src="/assets/img/logo/svg_h.svg" alt="Logo Horizontal" class="header__logo-img">
+            </a>
+        </div>
+        <div class="header__telegram">
+            <a href="https://t.me/joinchat/fb9-0KupETo0ODU0" class="header__telegram-link"><img src="/assets/icons/telegram.svg" alt="telegram" class="header__logo-telegram show__mobile">
+            </a>
+        </div>
+        <div x-data="{ expanded: false }" >
+            <button @click="expanded = !expanded" class="hamburger hamburger--squeeze header__nav-button show__mobile" type="button" x-bind:class="expanded ? 'is-active' : ''" >
+                      <span class=" hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+            </button>
+            <div x-show="expanded" x-collapse class="header__nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--pink"  @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">¿Qué es Defi?</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--pink-light" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">Formaciones</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--orange" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">Sobre Mi</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--yellow" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">Enlaces de Interés</a></li>
+                </ul>
+                <p class="header__nav-button-area">
+                    <a href="#" class="button header__nav-login show__mobile">Iniciar Sesión</a>
+                </p>
+                <p class="header__nav-button-area">
+                    <a href="#" class="button header__nav-register show__mobile">Registrate</a>
+                </p>
+            </div>
+            <div class="header__nav-menu show__desktop">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link" >¿Qué es Defi?</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Formaciones</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Sobre Mi</a></li>
+                    <li class="header__nav-item">
+                        <div x-data="{ expanded: false }" >
+                            <button @click="expanded = !expanded" class="header__nav-link enlaces" type="button" x-bind:class="expanded ? 'is-active' : ''" >Enlaces de Interés</button>
+                            <div x-show="expanded" x-collapse class="enlaces__nav-menu">
+                                <div class="enlaces__container" @click="expanded = !expanded" x-bind:class="expanded ? 'is-active' : ''">
+                                    <div class="enlaces__nav-item enlaces__nav-item-binance">
+                                        <a href="https://accounts.binance.com/es/register?ref=H0CM5R7H" target="_blank" class="enlaces__nav-link">
+                                            <img src="assets/img/logo_links/Binance_logo.png"
+                                                 alt="Binance" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item enlaces__nav-item-coinbase">
+                                        <a href="https://www.coinbase.com/es/join/belda_v?src=ios-link" target="_blank" class="enlaces__nav-link">
+                                            <img src="assets/img/logo_links/coinbase.png"
+                                                 alt="Coinbase" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item enlaces__nav-item-revolut">
+                                        <a href="https://revolut.com/referral/albert9eh6!SEP1AGG" target="_blank" class="enlaces__nav-link">
+                                            <img src="assets/img/logo_links/Logo_Revolut.png"
+                                                 alt="Revolut" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item">
+                                        <a href="https://dappradar.com/" target="_blank" class="enlaces__nav-link enlaces__nav-item-dapp">
+                                            <img src="assets/img/logo_links/dappradar-logo.png"
+                                                 alt="Dappradar" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item">
+                                        <a href="https://es.tradingview.com/gopro/?share_your_love=Alguertor" target="_blank" class="enlaces__nav-link enlaces__nav-item-tradingv">
+                                            <img src="assets/img/logo_links/defilama.png"
+                                                 alt="Tradingview" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item">
+                                        <a href="https://defipulse.com/" target="_blank" class="enlaces__nav-link enlaces__nav-item-dp">
+                                            <img src="assets/img/logo_links/defipulse.png"
+                                                 alt="Defipulse" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item">
+                                        <a href="https://www.defistation.io/" target="_blank" class="enlaces__nav-link enlaces__nav-item-ds">
+                                            <img src="assets/img/logo_links/Defistation.png"
+                                                 alt="Defistation" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item">
+                                        <a href="https://metamask.io/" target="_blank" class="enlaces__nav-link enlaces__nav-item-metamask">
+                                            <img src="assets/img/logo_links/metamask.png"
+                                                 alt="Metamask" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                    <div class="enlaces__nav-item">
+                                        <a href="https://coinmarketcap.com/es/" target="_blank" class="enlaces__nav-link enlaces__nav-item-coinmarket">
+                                            <img src="assets/img/logo_links/coinmarketcap.png"
+                                                 alt="Coinmarketcap" class="enlaces__nav-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="politicacookies">
+    <div class="container">
+        <h1 class="politicacookies__title">Politica de Cookies</h1>
+        <p>Este sitio web, al igual que la mayoría de los sitios en Internet, usa Cookies para mejorar y optimizar la experiencia del usuario. A continuación encontrarás información detallada sobre qué son las “Cookies”, qué tipología utiliza este sitio web, cómo puedes desactivarlas en tu navegador y cómo bloquear específicamente la instalación de Cookies de terceros.</p>
+        <h4 class="politicacookies__subtitulo">Las Cookies y cómo se utilizan en los sitios web</h4>
+        <p lang="es-ES">Una “Cookie” es un pequeño archivo que se almacena en el ordenador del usuario, Tablet, smartphone o cualquier otro dispositivo con información sobre la navegación.</p>
+        <p lang="es-ES">El conjunto de “cookies” de todos nuestros usuarios nos ayuda a mejorar la calidad de nuestra web, permitiéndonos controlar qué páginas son útiles, cuáles no y cuáles son susceptibles de mejora.</p>
+        <p lang="es-ES">Las cookies son esenciales para el funcionamiento de Internet, aportando innumerables ventajas en la prestación de servicios interactivos, facilitándole la navegación y usabilidad de nuestra web.</p>
+        <p lang="es-ES">En ningún caso las cookies podrían dañar su equipo. Por contra, el que estén activas nos ayuda a identificar y resolver los errores.</p>
+        <h4 class="politicacookies__subtitulo">Tipos de cookies</h4>
+        <p lang="es-ES"><strong>Según la entidad que la gestiona:</strong></p>
+        <p lang="es-ES"><strong>&#8211; Cookies propias:</strong> Son aquellas que se envían a su equipo desde nuestros propios equipos o dominios y desde el que prestamos el servicio que nos solicita.<br />
+            <strong>&#8211; Cookies de terceros:</strong> Son aquellas que se envían a su equipo desde un equipo o dominio que no es gestionado por nosotros, sino por otra entidad colaboradora. Como, por ejemplo, las usadas por redes sociales, o por contenido externo como Google Maps.</p>
+        <p lang="es-ES"><strong>Según el plazo de tiempo que permanecen activadas:</strong></p>
+        <p lang="es-ES"><strong>&#8211; Cookies de sesión:</strong> Son cookies temporales que permanecen en el archivo de cookies de su navegador hasta que el Usuario abandona la página web, por lo que ninguna queda registrada en el disco duro de su ordenador. La información obtenida por medio de estas cookies, sirven para analizar pautas de tráfico en el website. A la larga, esto nos permite proporcionar una mejor experiencia para mejorar el contenido y facilitar su uso.<br />
+            <strong>&#8211; Cookies persistentes:</strong> son almacenadas en el disco duro y nuestra web las lee cada vez que el Usuario realiza una nueva visita. Una cookie permanente posee una fecha de expiración determinada. La cookie dejará de funcionar después de esa fecha. Estas cookies las utilizamos, generalmente, para facilitar los servicios de compra y registro.</p>
+        <p lang="es-ES"><strong>Según su finalidad:</strong></p>
+        <p lang="es-ES"><strong>&#8211; Cookies técnicas:</strong> Son aquellas necesarias para la navegación y el buen funcionamiento de nuestro website. Permiten, por ejemplo, controlar el tráfico y la comunicación de datos, acceder a partes de acceso restringido, realizar el proceso de compra de un pedido, utilizar elementos de seguridad, almacenar contenidos para poder difundir vídeos o compartir contenidos a través de redes sociales.<br />
+            <strong>&#8211; Cookies de personalización:</strong> Son aquéllas que permiten al Usuario acceder al servicio con unas características predefinidas en función de una serie de criterios, como por ejemplo el idioma, el tipo de navegador a través del cual se accede al servicio, la configuración regional desde donde se accede al servicio, etc.<br />
+            <strong>&#8211; Cookies de análisis:</strong> Son aquéllas que nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios de los servicios prestados.<br />
+            Para ello se analiza su navegación en nuestro website con el fin de mejorar la oferta de productos y servicios que ofrecemos.<br />
+            <strong>&#8211; Cookies publicitarias:</strong> Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que se pudieran incluir en nuestro website.<br />
+            <strong>&#8211; Cookies de publicidad comportamental:</strong> Estas cookies almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada. Gracias a ellas, podríamos conocer los hábitos de navegación en Internet y mostrarle publicidad relacionada con su perfil de navegación.</p>
+        <h4 class="politicacookies__subtitulo">Finalidad de cada una de las cookies utilizadas:</h4>
+        <div class="politicacookies__text">
+            <p>A continuación, detallamos las cookies utilizadas en nuestra web y el proveedor al que pertenecen. Cookies propias son las que pertenecen a nuestro dominio y cookies de terceros son las que pertenecen a otros dominios según la siguiente:</p>
+        </div>
+        <div class="politicacookies__text">
+            <p><strong>Cookie:</strong> Google Analytics.</p>
+            <p><strong>&#8211; Nombre de la cookie: </strong>_ga, _gid, _gat, AMP_TOKEN, __utma, __utmt, __utmb, __utmc, __utmz, __utmv, __utmx.<br />
+                <strong>&#8211; Tipo: </strong>De terceros, analíticas y cookies permanentes.<br />
+                <strong>&#8211; Propósito: </strong>Recoger información sobre la navegación de los usuarios por el sitio con el fin de conocer el origen de las visitas y otros datos similares a nivel estadístico. No obtiene datos de los nombres o apellidos de los usuarios ni de la dirección postal concreta desde donde se conectan.<br />
+                <strong>&#8211; Más información: </strong><a href="https://policies.google.com/privacy?hl=es" class="politicacookies__link">Privacidad Google Analytics</a> <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es-419" class="politicacookies__link">Google Developer</a></p>
+            <h4 class="subtitulo">Ayuda para que el usuario pueda deshabilitar las cookies</h4>
+            <p>Puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones de su navegador de Internet. En caso de que no permita la instalación de cookies en su navegador es posible que no pueda acceder a algunos de los servicios y que su experiencia en el website pueda resultar menos satisfactoria.</p>
+            <p><strong><span lang="en-US">&#8211; Firefox</span><span lang="en-US">: </span></strong><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we" class="politicacookies__link"><span lang="en-US">http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</span></a><br />
+                <strong><span lang="en-US">&#8211; Chrome</span><span lang="en-US">: </span></strong><a href="https://support.google.com/chrome/bin/answer.py?hl=es&amp;answer=95647" class="politicacookies__link">http://support.google.com/chrome/bin/answer.py?hl=es&amp;answer=95647</a><br />
+                <strong><span lang="en-US">&#8211; Explorer</span><span lang="en-US">: </span></strong><a href="https://support.microsoft.com/es-es/help/17442" class="politicacookies__link"><span lang="en-US">https://support.microsoft.com/es-es/help/17442</span></a><br />
+                <strong><span lang="en-US">&#8211; Safari</span><span lang="en-US">: </span></strong><a href="https://support.apple.com/kb/ph5042" class="politicacookies__link"><span lang="en-US">http://support.apple.com/kb/ph5042</span></a><br />
+                <strong>&#8211; Opera: </strong><a href="http://help.opera.com/Windows/11.50/es-ES/cookies.html" class="politicacookies__link">http://help.opera.com/Windows/11.50/es-ES/cookies.html</a><br />
+                <strong>&#8211; Otros navegadores</strong><strong>:</strong> consulte la documentación del navegador que tenga instalado.</p>
+        </div>
+    </div>
+    </div>
+</section>
+<footer class="footer">
+    <h2 class="footer__calltoaction">¿Hablamos?</h2>
+    <nav class="footer__nav">
+        <ul class="footer__nav-ul">
+            <li class="footer-nav__il">
+                <a href="https://www.instagram.com/defidesdecero/" class="footer-nav__link">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer-nav__icon">
+                </a>
+            </li>
+            <li class="footer-nav__il">
+                <a href="https://twitter.com/DefiDesdeCero" class="footer-nav__link">
+                    <img src="assets/icons/twitter.svg" alt="Twitter" class="footer-nav__icon">
+                </a>
+            </li>
+            <li class="footer-nav__il">
+                <a href="https://www.facebook.com/alberto.fayosbelda" class="footer-nav__link">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer-nav__icon">
+                </a>
+            </li>
+            <li class="footer-nav__il">
+                <a href="https://www.linkedin.com/in/alberto-fayos-a1aa9a49/" class="footer-nav__link">
+                    <img src="assets/icons/linkedin.svg" alt="Linkedin" class="footer-nav__icon footer-nav__icon-linkedin">
+                </a>
+            </li>
+            <li class="footer-nav__il show__desktop">
+                <a href="https://t.me/joinchat/fb9-0KupETo0ODU0" class="footer-nav__link">
+                    <img src="assets/icons/telegram.svg" alt="Telegram" class="footer-nav__icon">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="footer__politicas">
+        <a href="avisolegal.html" class="footer__politicas-link footer__text">Acuerdos Legales y Politica de Privacidad</a>
+    </div>
+    <p class="footer__text">
+        &copy; 2021 Defi Desde Cero
+    </p>
+</footer>
+</body>
+</html>
